@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral com Vídeos do YouTube</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"><!-- fonte-->
+</head>
+<body>
+    <!-- Barra Superior-->
+    <div class="barra-superior">
+        <a href="" class="logolink"><img src="logoDocnuvem.svg" alt="Logo"></a>
+    </div>
+
+    <!-- Menu Lateral -->
+    <div class="menu-lateral">
+        <!-- Item do Menu - Página Inicial -->
+        <!-- Item do Menu - Página Inicial -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="paginainicial.png" alt="Página Inicial">
+            <span>Página Inicial</span>
+        </a>
+
+        <!-- Item do Menu - Meus documentos -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="meusdocumentos.png" alt="Meus documentos">
+            <span>Meus documentos</span>
+        </a>
+
+        <!-- Item do Menu - Busca avançada -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="buscaavancada.png" alt="Busca avançada">
+            <span>Busca avançada</span>
+        </a>
+
+        <!-- Item do Menu - Notificações -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="notificacoes.png" alt="Notificações">
+            <span>Notificações</span>
+        </a>
+
+        <!-- Item do Menu - Meus cadastros -->
+        <a href="javascript:void(0);" onclick="toggleMenu('submenucadastros')">
+            <img class="icon-menu" src="meuscadastros.png" alt="Meus cadastros">
+            <span>Meus cadastros</span>
+            <span class="seta">🢒</span> <!-- Seta para indicar o estado -->
+        </a>
+        <ul id="submenucadastros" class="submenu">
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="empresas.png" alt="Empresa">
+                    <span>Empresa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="permissoes.png" alt="Grupos de Permissões">
+                    <span>Grupos de Permissões</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="buscaavancada.png" alt="Busca personalizada">
+                    <span>Busca personalizada</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="usuarios.png" alt="Usuários">
+                    <span>Usuários</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="checklist.png" alt="Contatos">
+                    <span>Contatos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="setores.png" alt="Setores">
+                    <span>Setores</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="formulario.png" alt="Formulários">
+                    <span>Formulários</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Item do Menu - Meus modelos -->
+        <a href="javascript:void(0);" onclick="toggleMenu('submenumodelos')">
+            <img class="icon-menu" src="meusmodelos.png" alt="Meus modelos">
+            <span>Meus modelos</span>
+            <span class="seta">🢒</span> <!-- Seta para indicar o estado -->
+        </a>
+        <ul id="submenumodelos" class="submenu">
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="meusdocumentos.png" alt="Modelo de diretório">
+                    <span>Modelo de diretório</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="diretorio.png" alt="Modelo de documento">
+                    <span>Modelo de documento</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="silicitacao.png" alt="Modelo de silicitação">
+                    <span>Modelo de silicitação</span>
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Item do Menu - Tipos cadastrados -->
+        <a href="javascript:void(0);" onclick="toggleMenu('submenutipo')">
+            <img class="icon-menu" src="tiposcadastrados.png" alt="Tipos cadastrados">
+            <span>Tipos cadastrados</span>
+            <span class="seta">🢒</span> <!-- Seta para indicar o estado -->
+        </a>
+        <ul id="submenutipo" class="submenu">
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="tipodocumento.png" alt="Tipo de documento">
+                    <span>Tipo de documento</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="tipometadado.png" alt="Tipo de metadado">
+                    <span>Tipo de metadado</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Item do Menu - Meus modelos -->
+        <a href="javascript:void(0);" onclick="toggleMenu('submenuarquivos')">
+            <img class="icon-menu" src="arquivos.png" alt="Arquivos">
+            <span>Arquivos</span>
+            <span class="seta">🢒</span> <!-- Seta para indicar o estado -->
+        </a>
+        <ul id="submenuarquivos" class="submenu">
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="formulario.png" alt="Contratos">
+                    <span>Contratos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="certificados.png" alt="Certificados">
+                    <span>Certificados</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="enviointeligente.png" alt="Envio Inteligente">
+                    <span>Envio inteligente</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="tiposcadastrados.png" alt="Assinatura em massa">
+                    <span>Assinatura em massa</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Item do Menu - Relatórios -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="relatorios.png" alt="Relatórios">
+            <span>Relatórios</span>
+        </a>
+
+        <!-- Item do Menu - Tarefas -->
+        <a href="javascript:void(0);" onclick="toggleMenu('submenutarefas')">
+            <img class="icon-menu" src="tarefas.png" alt="Tarefas">
+            <span>Tarefas</span>
+            <span class="seta">🢒</span> <!-- Seta para indicar o estado -->
+        </a>
+        <ul id="submenutarefas" class="submenu">
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="listatarefas.png" alt="Lista tarefas">
+                    <span>Tarefas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="projetos.png" alt="Projetos">
+                    <span>Projetos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#video1" onclick="loadVideo('UV0mhY2Dxr0')">
+                    <img class="icon-menu" src="kanban.png" alt="Quadro kanban">
+                    <span>Quadro kanban</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Item do Menu - Auditoria -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="auditoria.png" alt="Auditoria">
+            <span>Auditoria</span>
+        </a>
+
+        <!-- Item do Menu - Lixeira -->
+        <a href="#video2" onclick="loadVideo('NNS5Piu-EII')">
+            <img class="icon-menu" src="lixeira.png" alt="Lixeira">
+            <span>Lixeira</span>
+        </a>
+    </div>
+    <!-- Conteúdo Principal -->
+    <div class="conteudo">
+        <div id="video-frame">
+            <p>Escolha um tópico no menu para assistir ao vídeo.</p>
+        </div>
+    </div>
+
+    <script>
+        // Função para carregar o vídeo do YouTube
+        function loadVideo(videoId) {
+            const iframe = `<iframe src="https://www.youtube.com/embed/${videoId}?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+            document.getElementById('video-frame').innerHTML = iframe;
+        }
+
+        // Função para alternar a visibilidade do submenu e animar a seta
+        function toggleMenu(submenuId) {
+            var submenu = document.getElementById(submenuId);
+            var seta = submenu.previousElementSibling.querySelector('.seta'); // Seleciona a seta
+
+            submenu.classList.toggle('active'); // Alterna a visibilidade do submenu
+            if (submenu.classList.contains('active')) {
+                seta.innerHTML = '🢓'; // Seta para baixo quando o submenu é expandido
+            } else {
+                seta.innerHTML = '🢒'; // Seta para a direita quando o submenu é recolhido
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e3e3;
+}
+
+.barra-superior {
+    background-color: #101820;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logolink {
+    width: 60%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do menu lateral */
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 90px);
+    width: 250px;
+    background-color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    justify-content: flex-start; /* Garante que os itens começam no topo */
+}
+
+.menu-lateral > a:last-child {
+    margin-bottom: auto; /* Empurra o último item para o fundo */
+}
+
+
+
+.menu-lateral.icon-menu {
+    width: 20px;  /* Defina a largura desejada (ajustável conforme a necessidade) */
+    height: 20px; /* Defina a altura desejada (ajustável conforme a necessidade) */
+    margin-right: 20px;  /* Distância entre o ícone e o texto */
+    fill: #7a7a7a; /* Cor padrão do ícone */
+    object-fit: contain; /* Garantir que a imagem preserve o aspecto original sem distorção */
+}
+
+.menu-lateral a:hover .icon-menu {
+    fill: #fff; /* Muda a cor do ícone quando passa o mouse */
+}
+
+.menu-lateral a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #7a7a7a;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.menu-lateral a:hover {
+    background-color: #a7a9ff;
+    color: #fff;
+}
+
+/* Adicionando a seta */
+.seta {
+    font-size: 18px;
+    transition: transform 0.3s;
+    margin-left: auto;
+}
+
+/* Submenu (inicialmente escondido) */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.submenu a {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+
+.submenu a:hover {
+    background-color: #a7a9ff;
+}
+
+/* Mostrar submenu quando a classe 'active' for adicionada */
+.active {
+    display: block;
+}
+
+/* Área de conteúdo principal */
+.conteudo {
+    margin-left: 260px;
+    margin-top: 70px;
+    padding: 5px;
+    flex: 1;
+    background-color: #fafafa;
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.icon-menu {
+    width: 20px;
+    height: 20px;
+}
